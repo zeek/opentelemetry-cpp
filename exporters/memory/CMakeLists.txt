@@ -2,7 +2,9 @@
 # SPDX-License-Identifier: Apache-2.0
 
 add_library(opentelemetry_exporter_in_memory
-            src/in_memory_span_exporter_factory.cc)
+  src/in_memory_metric_exporter_factory.cc
+  src/in_memory_metric_exporter.cc
+  src/in_memory_span_exporter_factory.cc)
 
 target_include_directories(
   opentelemetry_exporter_in_memory
